@@ -2,7 +2,7 @@
     width: 90px;
     object-fit: contain;
     margin-left: 20px;
-    margin-top:  ;
+    
 }
 .header {
     display: flex;
@@ -13,17 +13,20 @@
     background-color: #131921;
     z-index: 100;
     align-items: center;
+    padding: 5px 0;
 }
 
 .header_search{
    
     flex:1;
     border-radius: 10px;
-    height: 30px;
+    height: 45px;
     margin: 0 30px;
     background-color: rgb(255, 254, 254);
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
 }
 .header_search input {
     width: 95%;
@@ -36,9 +39,20 @@
     font-size: 100%;
 }
 
+.header_search .fa-magnifying-glass{
+    background-color: #CD9042;
+    font-size: larger;
+    margin: 0;
+    aspect-ratio: 1;
+    line-height: 100%;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+}
+
 .header_nav {
     display: flex;
-    width: 25vw;
+    width: 40vw;
     justify-content: space-around;
 }
 
@@ -53,8 +67,28 @@
     font-weight: 600;
     color: white;
 }
-.header_option {
+
+.header_option{
     display: grid;
     justify-content: center;
     padding: 5px;
+}
+.header_optionBasket{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    
+    width: 60px;
+}
+
+.header_optionBasket .fa-basket-shopping{
+    color: white;
+    font-size: 30px;
+}
+
+.header_optionBasket .header_option2{
+    font-size: 30px;
+    color: white;
+
 }

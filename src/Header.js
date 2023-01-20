@@ -15,7 +15,7 @@ function Header() {
             className="header_search">
                 <input
                 className="header_searchInput" type="text"/>
-                {/* logo */}
+                <i class="fa-solid fa-magnifying-glass"></i>
 
             </div>
 
@@ -34,6 +34,11 @@ function Header() {
                     <span className="header_option1">Your</span>
                     <span className="header_option2">Prime</span>
                 </div>
+                <div className="header_optionBasket" >
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span className="header_option2">0</span>
+                </div>
+                
             </div>
 
         </div>
