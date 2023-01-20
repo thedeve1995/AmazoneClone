@@ -1,0 +1,40 @@
+.side_nav {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    top: 0;
+    left: -400px;
+    width: 400px;
+    transition: 0.5s;
+}
+
+.close {
+    width: 40px;
+    position: relative;
+    left: 400px;
+    font-size: 40px;
+    background-color: rgba(1, 9, 17, 0.527);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+    display: none;
+}
+
+.sideNavHead {
+    display: flex;
+    align-items: center;
+    background-color: rgb(10, 19, 39);
+    padding: 0;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    padding-left: 25%;
+    transform: translateY(-103%);
+    
+}
+
+.sideNavHead i {
+    font-size: 20px;
+}

@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header'
+import Header from './Header';
+
+import Home from './Home';
+
 
 function App() {
   return (
@@ -19,7 +22,11 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Header/>
+      <Header />
+      
+     
+      <Home />
+
     </div>
   );
 }

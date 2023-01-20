@@ -1,0 +1,54 @@
+.home{
+    display: flex;
+    position: relative;
+    
+}
+
+
+.home_image{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.8), rgba(0, 0, 0, 0));
+    position: absolute;
+    zoom: 30%;
+    transition: all 0.5s ease;
+    object-fit: 200%;
+}
+
+button.left{
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    height: 200px;
+    width: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 25px;
+    cursor: pointer;
+}
+button.right{
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    height: 200px;
+    width: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.home:hover button{
+    opacity: 0.3;
+}
+
+.home:hover button:hover{
+    opacity: 1;
+}
