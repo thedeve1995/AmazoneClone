@@ -1,25 +1,27 @@
 .side_nav {
     position: absolute;
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    height: 95vh;
     top: 0;
     left: -400px;
     width: 400px;
     transition: 0.5s;
+    overflow-y: auto;
 }
 
 .close {
     width: 40px;
     position: relative;
-    left: 400px;
+    left: 320px;
     font-size: 40px;
-    background-color: rgba(1, 9, 17, 0.527);
+    background-color: rgba(1, 9, 17, 0.205);
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
     color: white;
     transition: 0.5s;
     display: none;
+    z-index: 100;
 }
 
 .sideNavHead {
@@ -32,9 +34,78 @@
     text-align: center;
     padding-left: 25%;
     transform: translateY(-103%);
-    
+    transition: 0.5s;
+    z-index: 10;
 }
 
 .sideNavHead i {
     font-size: 20px;
+}
+
+.sideNavButton{
+    text-align: left;
+    
+    transform: translateY(-95px);
+}
+
+.sideNavButton h2{
+    padding: 0 20px;
+    padding-top: 10px;
+}
+
+.sideNavButton .SN-button{
+    font-weight: 300;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px ;
+    line-height: 20px;
+    
+    cursor: pointer;
+}
+
+.sideNavButton .SN-button.all{
+    justify-content: left;
+}
+.sideNavButton .SN-button.all1{
+    justify-content: left;
+    display: none;
+}
+
+#tambahan{
+    display: none;
+    transition: 0.5s;
+}
+
+#tambahan .SN-button1{
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px ;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.sideNavButton .SN-button p,.sideNavButton #tambahan .SN-button1 p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sideNavButton .SN-button.all p,.sideNavButton .SN-button.all1 p{
+    margin-right: 10px;
+}
+
+.sideNavButton .SN-button:hover,.sideNavButton #tambahan .SN-button1:hover {
+    background-color: rgb(175, 172, 172);
+}
+
+.sideNavButton .SN-button i, .sideNavButton #tambahan .SN-button1 i{
+    font-size: 20px;
+    color: rgb(90, 89, 89);
+}
+
+.sideNavButton .SN-button:hover i,.sideNavButton #tambahan .SN-button1:hover i {
+    color: black;
 }
