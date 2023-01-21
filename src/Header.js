@@ -15,7 +15,7 @@ function Header() {
 
                 <div
                 className="header_search">
-                    <input value={"Cari Barang Anda !"}
+                    <input 
                     className="header_searchInput" type="text"/>
                     <i class="fa-solid fa-magnifying-glass"></i>
 

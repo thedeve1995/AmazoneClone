@@ -67,10 +67,7 @@ function SecondHeader() {
                         <p>Amazon AppStore</p>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
-                    <hr></hr>   
-                </div>
-                
-                <div className="sideNavButton">
+                    <hr></hr>  
                     <h2>Shop By Department</h2>
                     <div className="SN-button">
                         <p>Electronics</p>
@@ -173,12 +170,50 @@ function SecondHeader() {
                     <div onClick={accordion} className="SN-button all1" id='all1'>
                         <p className="accordion">See Less</p>
                         <i class="fa-solid fa-chevron-up"></i>
+                    </div> 
+                    <hr></hr>
+                    <h2>Programs & Features</h2>
+                    <div className="SN-button">
+                        <p>Gift Cars</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div className="SN-button">
+                        <p>#FoundItOnAmazon</p>
+                    </div>
+                    <div className="SN-button">
+                        <p>Amazon Live</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div className="SN-button">
+                        <p>International Shopping</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div className="SN-button">
+                        <p>Amazon Second Chance</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <hr></hr>
+                    <h2>Help & Settings</h2>
+                    <div className="SN-button">
+                        <p>Your Account</p>
+                    </div>
+                    <div className="SN-button">
+                        <p>English</p>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div className="SN-button">
+                        <p>United States</p>
+                        <i class="fa-solid fa-flag-usa"></i>
+                    </div>
+                    <div className="SN-button">
+                        <p>Customer Service</p>
+                    </div>
+                    <div className="SN-button sign-in">
+                        <p>Sign In</p>
                     </div>
                 </div>
-
-
-
             </div>
+
             <div className="header_nav1">
                 <div className="menu" onClick={menu} >
                     <span className="header_option2">

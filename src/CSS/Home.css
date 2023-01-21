@@ -1,19 +1,22 @@
 .home{
     display: flex;
-    position: relative;
+    
+    justify-content: center;
     
 }
-
+.batas-atas {
+    height: 120px;
+    width: 100%;
+}
 
 .home_image{
-    width: 100%;
-    z-index: -1;
-    margin-bottom: -150px;
+    width: 100vw;
+    height: 700px;
+    z-index: -100;
+    margin-bottom: -250px;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.8), rgba(0, 0, 0, 0));
-    position: absolute;
-    zoom: 30%;
-    transition: all 0.5s ease;
-    object-fit: 200%;
+    position: relative;
+    
 }
 
 button.left{
@@ -29,6 +32,8 @@ button.left{
     transition: 0.3s;
     font-size: 25px;
     cursor: pointer;
+    
+    
 }
 button.right{
     position: absolute;
@@ -43,6 +48,7 @@ button.right{
     transition: 0.3s;
     font-size: 25px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .home:hover button{
