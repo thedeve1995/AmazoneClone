@@ -1,0 +1,53 @@
+.purchase {
+    width: 300px;
+
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.purchase .title {
+    font-size: larger;
+    text-align: left;
+    margin: 0;
+}
+
+.purchase .img{
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.purchase .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.purchase button{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gray;
+    background-image: linear-gradient(white,yellow);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.purchase .rating i{
+    color: darkorange;
+
+    
+}
+.purchase .rating{
+    margin: 0;
+    
+    text-align: left;
+}
+
+.purchase .price {
+    margin: 20px 0;
+    font-size: 25px;
+}
+

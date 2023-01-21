@@ -58,3 +58,26 @@ button.right{
 .home:hover button:hover{
     opacity: 1;
 }
+
+.home_row {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-around;
+    
+    
+    
+}
+
+.Purchase__recom{
+    display: flex;
+    width: 95vw;
+    
+    background-color: white;
+    margin-top: -75px;
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow-x: auto;
+    justify-content: space-around;
+    padding: 20px;
+}

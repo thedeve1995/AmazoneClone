@@ -1,5 +1,5 @@
 .product {
-    z-index: -1;
+    z-index: 3;
     width: 370px;
     height: 500px;
     aspect-ratio: 1;
@@ -13,14 +13,30 @@
     position: relative;
     padding: 10px 0;
     margin: 10px;
+    
 }
+
 img{
     width: 150px;
 }
-.home_row {
-    margin-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
+
+.shop-now{
+    color: rgb(0, 132, 255);
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product_categories{
+    padding: 10px;
+    border-radius: 5px;
+}
+.product_categories:hover{
+    cursor: pointer;
+    box-shadow:inset 0 0 10px gray;
+}
+.product_categories:active{
+    cursor: pointer;
+    box-shadow:inset 0 0 5px gray;
 }

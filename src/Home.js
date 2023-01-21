@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CSS/Home.css';
 import Product from './Product';
+import Purchase from './PurchaseRecommmendation';
 
 function Home() {
   const images = ["IMG/lunar.jpg", "IMG/computer.jpg", "IMG/home.jpg", "IMG/Beauty.jpg", "IMG/shipping.jpg", "IMG/toys.jpg"];
@@ -85,10 +86,29 @@ function Home() {
           />
           
       </div>
-      <div className='home_row'>
-          {/* product */}
-          {/* product */}
-          {/* product */}
+      <div className='Purchase__recom'>
+          <Purchase 
+              gambar='IMG/product/porcelain.jpg'
+              title='Stone Lain Porcelain 16 Piece Dinnerware Set, Service for 4, Green and Golden Rim'
+              price='108.87'
+          />
+          <Purchase 
+              gambar='IMG/product/gaming.jpg'
+              title='KERDOM Ergonomic Office Chair, Breathable Mesh Desk Chair'
+              price='139.99'  
+          />
+          <Purchase 
+              gambar='IMG/product/cctv.jpg'
+              title='Arlo Essential Spotlight Camera - 1 Pack - Wireless Security, 1080p Video, Color Night Vision, 2 Way Audio'
+              price='83.5'  
+          />
+          <Purchase 
+              gambar='IMG/product/watch.jpg'
+              title='Garmin 010-02173-11 Venu, GPS Smartwatch with Bright Touchscreen Display, Features Music'
+              price='214.91'
+          
+          />
+          
       </div>
 
     </div>

@@ -34,7 +34,8 @@ function Product(props) {
             <p>{props.nama4}</p>
         </div>
 
-        <p>Shop Now</p>
+        <p className='shop-now'>Shop Now ></p>
+        
     </div>
   );
 }
