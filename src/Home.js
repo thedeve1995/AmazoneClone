@@ -104,7 +104,7 @@ function Home() {
           />
           <Purchase 
               gambar='IMG/product/watch.jpg'
-              title='Garmin 010-02173-11 Venu, GPS Smartwatch with Bright Touchscreen Display, Features Music'
+              title='Garmin 010-02173-11 Venu, GPS Smartwatch  with Bright Touchscreen Display, Features Music'
               price='214.91'
           
           />
