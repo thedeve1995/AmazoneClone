@@ -29,7 +29,7 @@
     height: 45px;
     border-radius: 8px;
     outline: none;
-    border: 1px solid gray;
+    
     background-image: linear-gradient(white,yellow);
     cursor: pointer;
     font-size: 18px;

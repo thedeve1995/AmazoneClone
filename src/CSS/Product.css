@@ -28,6 +28,10 @@ img{
     cursor: pointer;
 }
 
+.shop-now:hover{
+    text-decoration: underline;
+}
+
 .product_categories{
     padding: 10px;
     border-radius: 5px;

@@ -14,7 +14,10 @@ function Purchase (props) {
                 {props.title}
             </p>
             <p className='rating'>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
             </p>
             <p className='price'>
