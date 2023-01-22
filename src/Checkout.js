@@ -13,7 +13,7 @@ function Checkout () {
                         <p>Price</p>
                     </div>
                     <div className='items'>
-
+                    
                     </div>
                     <p className='totalleft'>Subtotal (x items):<b>$xxx</b></p>
                 </div>

@@ -1,36 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react'
 import './CSS/Purchase.css'
+import Checkout from './Checkout'
+import { useStateValue } from './StateProvider'
 
+const Purchase = ({ gambar, title, rating, price }) => {
+    const [{ basket }, dispatch] = useStateValue();
+    console.log(`this is the basket >>>`,basket)
+    const addToBasket = () => {
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                
+                title: title,
+                rating: rating,
+                gambar: gambar,
+                price: price,
+            },
+        });
+    };
 
-function Purchase (props) {
-    return(
-        <div className='purchase'>
-            <div className='img'>
-            <img
-                src={props.gambar}
+  return (
+    <div className='purchase'>
+      <img src={gambar} alt={title} className='img' />
+      <p className='title'>{title}</p>
+      <p className='rating'>
+        {[...Array(5)].map((star, i) => {
+          const ratingValue = i + 1;
+          return (
+            <i 
+              key={i} 
+              className={`fa-solid fa-star${ratingValue > rating ? '-half-stroke' : ''}`}
             />
-            </div>
-            <p className='title'>
-                {props.title}
-            </p>
-            <p className='rating'>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p className='price'>
-                <sup>
-                    $
-                </sup>
-                <strong>
-                    {props.price}
-                </strong>
-            </p>
-            <button>Add to Basket</button>
-        </div>
-    )
+          );
+        })}
+      </p>
+      <p className='price'>
+        <sup>$</sup>
+        <strong>{price}</strong>
+      </p>
+      <button onClick={addToBasket}>Add to Basket</button>
+      
+    </div>
+  )
 }
 
 export default Purchase

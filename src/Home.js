@@ -91,21 +91,25 @@ function Home() {
               gambar='IMG/product/porcelain.jpg'
               title='Stone Lain Porcelain 16 Piece Dinnerware Set, Service for 4, Green and Golden Rim'
               price='108.87'
+              rating={3}
           />
           <Purchase 
               gambar='IMG/product/gaming.jpg'
               title='KERDOM Ergonomic Office Chair, Breathable Mesh Desk Chair'
-              price='139.99'  
+              price='139.99'
+              rating={4} 
           />
           <Purchase 
               gambar='IMG/product/cctv.jpg'
               title='Arlo Essential Spotlight Camera - 1 Pack - Wireless Security, 1080p Video, Color Night Vision, 2 Way Audio'
-              price='83.5'  
+              price='83.5'
+              rating={2}
           />
           <Purchase 
               gambar='IMG/product/watch.jpg'
               title='Garmin 010-02173-11 Venu, GPS Smartwatch  with Bright Touchscreen Display, Features Music'
               price='214.91'
+              rating={5}
           
           />
           

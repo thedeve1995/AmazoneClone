@@ -1,9 +1,13 @@
 import React from "react";
-import './CSS/Header.css'
+import './CSS/Header.css';
 import SecondHeader from "./SecondHeader";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+    const [{ basket }, dispatch] = useStateValue();
+
+
     return (
         <div className="parent">
             <div className="header">
@@ -39,7 +43,7 @@ function Header() {
                     <Link to="/checkout">
                         <div className="header_optionBasket" >
                             <i class="fa-solid fa-basket-shopping"></i>
-                            <span className="header_option2">0</span>
+                            <span className="header_option2">{basket?.length}</span>
                         </div>
                     </Link>
                     
