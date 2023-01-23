@@ -1,6 +1,6 @@
 .purchase {
-    width: 300px;
-
+    width: 250px;
+    margin: 10px 0;
     box-shadow: 0 0 10px black;
     background-color: white;
     border-radius: 10px;

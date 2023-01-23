@@ -5,7 +5,7 @@
     
 }
 .batas-atas {
-    height: 120px;
+    height: 100px;
     width: 100%;
 }
 
@@ -68,16 +68,31 @@ button.right{
     
     
 }
+.recom{
+    padding: 20px 20px 40px 0;
+    background-color: white;
+    margin: 20px;
+    margin-top: -75px;
+    display: grid;
+    border-radius: 20px;
+}
+
+.recom h1{
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    
+}
 
 .Purchase__recom{
     display: flex;
     width: 95vw;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    z-index: 20;
     
-    background-color: white;
-    margin-top: -75px;
-    margin-left: 10px;
     border-radius: 10px;
     overflow-x: auto;
     justify-content: space-around;
-    padding: 20px;
+    row-gap: 10px;
 }

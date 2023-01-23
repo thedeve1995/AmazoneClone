@@ -5,7 +5,7 @@ import { useStateValue } from './StateProvider'
 
 const Purchase = ({ gambar, title, rating, price }) => {
     const [{ basket }, dispatch] = useStateValue();
-    console.log(`this is the basket >>>`,basket)
+    
     const addToBasket = () => {
         dispatch({
             type: 'ADD_TO_BASKET',
@@ -29,7 +29,7 @@ const Purchase = ({ gambar, title, rating, price }) => {
           return (
             <i 
               key={i} 
-              className={`fa-solid fa-star${ratingValue > rating ? '-half-stroke' : ''}`}
+              className={`fa-solid fa-star${ratingValue > rating ? '-hal-stroke' : ''}`}
             />
           );
         })}

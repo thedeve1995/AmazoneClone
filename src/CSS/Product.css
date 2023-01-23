@@ -1,7 +1,7 @@
 .product {
     z-index: 3;
-    width: 370px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
     aspect-ratio: 1;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -17,14 +17,14 @@
 }
 
 img{
-    width: 150px;
+    width: 110px;
 }
 
 .shop-now{
     color: rgb(0, 132, 255);
     width: 90%;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -43,4 +43,8 @@ img{
 .product_categories:active{
     cursor: pointer;
     box-shadow:inset 0 0 5px gray;
+}
+
+.product_categories p{
+    font-size: smaller;
 }

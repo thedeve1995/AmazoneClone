@@ -3,10 +3,16 @@ import './CSS/Header.css';
 import SecondHeader from "./SecondHeader";
 import { Link } from 'react-router-dom';
 import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
 
 function Header() {
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
 
+    const handleAuthenticaton = () => {
+        if (user) {
+          auth.signOut();
+        }
+      }
 
     return (
         <div className="parent">
@@ -26,10 +32,12 @@ function Header() {
                 </div>
 
                 <div className="header_nav">
-                    <div className="header_option" >
-                        <span className="header_option1">Hello Guest !</span>
-                        <span className="header_option2">Sign In</span>
-                    </div>
+                    <Link to={!user && '/login'}>
+                        <div onClick={handleAuthenticaton}className="header_option" >
+                            <span className="header_option1">{!user ? 'Guest' : user.email}</span>
+                            <span className="header_option2">{user ? 'Sign Out' : 'Sign In'}</span>
+                        </div>
+                    </Link>
 
                     <div className="header_option" >
                         <span className="header_option1">Returns</span>

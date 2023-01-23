@@ -1,27 +1,70 @@
 import React from 'react'
+import CurrencyFormat from 'react-currency-format';
 import './CSS/Checkout.css'
+import { getBasketTotal } from "./reducer";
+import { useStateValue } from './StateProvider';
+import CheckoutProduct from "./CheckoutProduct";
 
 function Checkout () {
+    const [{ basket }, dispatch] = useStateValue();
+
     return (
         <div className='checkout'>
-
             <div className='upcheckout'>
 
                 <div className='shopping__cart'>
                     <div className='cartTitle'>
                         <h1>Shopping Cart</h1>
                         <p>Price</p>
+                        
                     </div>
                     <div className='items'>
-                    
+                    {basket.map(item => (
+            <CheckoutProduct
+             
+              title={item.title}
+              image={item.gambar}
+              price={item.price}
+              rating={item.rating}
+            />
+          ))}
                     </div>
-                    <p className='totalleft'>Subtotal (x items):<b>$xxx</b></p>
+                    <CurrencyFormat
+                            renderText={(value)=> (
+                                <>
+                                    <p className='totalleft'>
+                                        Subtotal ({basket?.length} items):<b>{value}</b>
+                                    
+                                    </p>
+
+                                </>
+                            )}
+                            decimalScale={2}
+                            value={getBasketTotal(basket)} // Part of the homework
+                            displayType={"text"}
+                            thousandSeparator={true}
+                            prefix={"$"}
+                        />
+                    
                 </div>
 
                 <div className='subtotal'>
                     <div className='ptc'>
-                        <p>Subtotal <b>Item </b>: <b>$xxx</b>
-                        </p>
+                        <CurrencyFormat
+                            renderText={(value)=> (
+                                <>
+                                    <p>
+                                        Subtotal ({basket.length} items) : <b>{value}</b>
+                                    </p>
+
+                                </>
+                            )}
+                            decimalScale={2}
+                            value={getBasketTotal(basket)} // Part of the homework
+                            displayType={"text"}
+                            thousandSeparator={true}
+                            prefix={"$"}
+                        />
                         <button>Process to Checkout</button>
                     </div>
                     <div className='item__sugestion'>
