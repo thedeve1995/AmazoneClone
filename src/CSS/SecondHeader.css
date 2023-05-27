@@ -9,7 +9,9 @@
     position: fixed;
     top: 60px;
     z-index: 100;
+    
 }
+
 
 
 
@@ -17,6 +19,15 @@
     display: flex;
     width: 500px;
     justify-content: space-around;
+}
+@media (max-width:400px) {
+    .header_nav1{
+        display: none;
+    }
+    .header1{
+        display: none;
+    }
+  
 }
 
 .header_option1{

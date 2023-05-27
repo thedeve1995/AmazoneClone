@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import './CSS/SecondHeader.css';
-import './CSS/SideNav.css'
+import './CSS/SideNav.css';
+import { Link } from 'react-router-dom';
+import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
+
 
 
 function SecondHeader() {
+    const [{ basket, user }, dispatch] = useStateValue();
+
+    const handleAuthenticaton = () => {
+        if (user) {
+          auth.signOut();
+        }
+    }
+
     const menu = () => {
         let side= document.getElementById("sidenav");
         let button= document.getElementById("button");
@@ -50,7 +62,7 @@ function SecondHeader() {
            
                 <div className="sideNavHead">
                     <i class="fa-solid fa-user"></i>
-                    <h2>Hello, sign in</h2>
+                    <h2>{!user ? 'Hello Guest' : user.email.slice(0,9)}</h2>
                 </div>
                 
                 <div className="sideNavButton">
@@ -208,9 +220,12 @@ function SecondHeader() {
                     <div className="SN-button">
                         <p>Customer Service</p>
                     </div>
-                    <div className="SN-button sign-in">
-                        <p>Sign In</p>
+                    <Link to={!user && '/login'}>
+                    <div className="SN-button sign-in" onClick={handleAuthenticaton}>
+                        <p>{!user ? 'Login' : "Sign Out"}</p>
                     </div>
+                    </Link>
+                    
                 </div>
             </div>
 

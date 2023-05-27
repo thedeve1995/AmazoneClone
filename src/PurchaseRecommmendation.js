@@ -35,7 +35,7 @@ const Purchase = ({ gambar, title, rating, price }) => {
         })}
       </p>
       <p className='price'>
-        <sup>$</sup>
+        <sup>Rp</sup>
         <strong>{price}</strong>
       </p>
       <button onClick={addToBasket}>Add to Basket</button>

@@ -11,9 +11,8 @@
 
 .home_image{
     width: 100vw;
-    height: 700px;
     z-index: -100;
-    margin-bottom: -250px;
+    margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.8), rgba(0, 0, 0, 0));
     position: relative;
     
@@ -37,7 +36,7 @@ button.left{
 }
 button.right{
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 20vh;
     height: 200px;
     width: 40px;
@@ -64,12 +63,9 @@ button.right{
     flex-wrap: wrap;
     width: auto;
     justify-content: space-around;
-    
-    
-    
 }
 .recom{
-    padding: 20px 20px 40px 0;
+    padding: 0 20px;
     background-color: white;
     margin: 20px;
     margin-top: -75px;
@@ -78,7 +74,7 @@ button.right{
 }
 
 .recom h1{
-    width: 100%;
+    width: 90%;
     text-align: center;
     z-index: 0;
     
@@ -95,4 +91,13 @@ button.right{
     overflow-x: auto;
     justify-content: space-around;
     row-gap: 10px;
+}
+
+@media (max-width:500px) {
+    .home_image {
+        margin-bottom: 100px;
+    }
+    .batas-atas{
+        height: 180px;
+    }
 }

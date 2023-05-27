@@ -4,17 +4,16 @@
     height: 95vh;
     top: 0;
     left: -400px;
-    width: 400px;
-    transition: 0.5s;
-    
+    width: 300px;
+    transition: 0.5s;    
 }
 
 .close {
-    width: 40px;
+    width: 25px;
     position: relative;
-    left: 340px;
-    font-size: 40px;
-    background-color: rgba(1, 9, 17, 0.205);
+    left: 255px;
+    font-size: 20px;
+    background-color: rgba(12, 129, 247, 0.205);
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
@@ -22,6 +21,7 @@
     transition: 0.5s;
     display: none;
     z-index: 100;
+    text-align: center;
 }
 
 .sideNavHead {
@@ -31,14 +31,19 @@
     padding: 0;
     gap: 20px;
     color: white;
-    text-align: center;
-    padding-left: 25%;
-    transform: translateY(-103%);
+    text-align: left;
+    padding-left: 10%;
+    transform: translateY(-100%);
     transition: 0.5s;
     z-index: 10;
+    height: 50px;
 }
 
 .sideNavHead i {
+    font-size: 20px;
+}
+
+.sideNavHead h2 {
     font-size: 20px;
 }
 
@@ -46,13 +51,13 @@
     text-align: left;
     height: 85vh;
     overflow-y: auto;
-    transform: translateY(-76px);
+    transform: translateY(-50px);
     z-index: -1;
 }
 
 .sideNavButton h2{
     padding: 0 20px;
-    padding-top: 10px;
+    font-size: 20px;
 }
 
 .sideNavButton .SN-button{
@@ -101,7 +106,7 @@
 }
 
 .sideNavButton .SN-button p,.sideNavButton #tambahan .SN-button1 p{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
 }
 

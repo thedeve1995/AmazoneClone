@@ -4,6 +4,7 @@ import './CSS/Checkout.css'
 import { getBasketTotal } from "./reducer";
 import { useStateValue } from './StateProvider';
 import CheckoutProduct from "./CheckoutProduct";
+import { Link } from 'react-router-dom';
 
 function Checkout () {
     const [{ basket }, dispatch] = useStateValue();
@@ -21,9 +22,8 @@ function Checkout () {
                     <div className='items'>
                     {basket.map(item => (
             <CheckoutProduct
-             
               title={item.title}
-              image={item.gambar}
+              gambar={item.gambar}
               price={item.price}
               rating={item.rating}
             />
@@ -43,7 +43,7 @@ function Checkout () {
                             value={getBasketTotal(basket)} // Part of the homework
                             displayType={"text"}
                             thousandSeparator={true}
-                            prefix={"$"}
+                            prefix={"Rp"}
                         />
                     
                 </div>
@@ -63,9 +63,11 @@ function Checkout () {
                             value={getBasketTotal(basket)} // Part of the homework
                             displayType={"text"}
                             thousandSeparator={true}
-                            prefix={"$"}
+                            prefix={"Rp"}
                         />
-                        <button>Process to Checkout</button>
+                        <Link to="/payment">
+                            <button>Process to Checkout</button>
+                        </Link>
                     </div>
                     <div className='item__sugestion'>
                     </div>
